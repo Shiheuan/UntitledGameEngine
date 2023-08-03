@@ -23,6 +23,7 @@ int main()
 	ObjectRenderer object;
 	object.createObjectRenderer(MeshType::kTriangle, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.5f));
 
+	// engine loop: game loop
 	while (!glfwWindowShouldClose(window))
 	{
 		VulkanContext::getInstance()->drawBegin();
